@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax Calculator"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="99dp"
+        android:textColor="@color/Chocolate"
+        android:id="@+id/topv"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Monthly Salary:"
+        android:layout_below="@id/topv"
+        android:layout_marginTop="30dp"
+        android:textSize="22dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/CadetBlue"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/msalaryv"
+
+        />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msalaryv"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/msalaryt"
+        android:hint="Your Monthly Salary"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msalaryt"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="10dp"
+        android:text="Calculate Tax"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:background="@color/Coral"
+        android:textColor="@color/Honeydew"
+        android:id="@+id/taxbtn"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yearly Tax Value Is:"
+        android:layout_below="@id/taxbtn"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/Green"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/taxv"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/taxv"
+        android:textSize="24dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/Chocolate"
+        android:id="@+id/taxval"/>
+
+</RelativeLayout>
